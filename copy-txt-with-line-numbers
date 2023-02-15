@@ -1,0 +1,28 @@
+	#include <iostream>
+  #include <fstream>
+  #include <iomanip>
+  #include <string>
+  
+  int main() {
+  
+  std::ifstream in_file{ "Sonnet-18-Shakespeare.txt" };
+	std::ofstream out_file{ "output_1.txt"};
+	if (!in_file.is_open()) {
+		std::cerr << "Error loading file." << std::endl;
+		return 1;
+	}
+	if (!in_file.is_open()) {
+		std::cerr << "Error loading file." << std::endl;
+		return 1;
+	}
+	std::string line{};
+	int line_number{ 0 };
+	while (getline(in_file, line)) {
+		++line_number; 
+		out_file << std::setw(7) << std::left << line_number << line << std::endl;
+	}
+	std::cout << "\nCopy complete." << std::endl;
+	in_file.close();
+	out_file.close();
+	return 0;
+}
