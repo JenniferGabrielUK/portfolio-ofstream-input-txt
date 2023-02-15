@@ -16,5 +16,6 @@ int main () {
 	std::cout << "Enter data for output write to file: " << std::endl;
 	std::getline(std::cin,line);
 	out_file << line << std::endl;
+	out_file.clode();
 return 0;
 }
