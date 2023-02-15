@@ -1,3 +1,6 @@
+//The input source file is called "Sonnet-18-Shakespeare.txt" and the output file 
+//is named "output_1.txt" for this program
+
 #include <iostream>
 #include <fstream>
 #include <iomanip>
