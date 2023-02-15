@@ -1,9 +1,12 @@
+// Include the output source file as output_1 or change the "output_1.txt" on line 8 to 
+// specifc file name.
+
 #include <iostream>
 #include <fstream>
 #include <iomanip>
 
 int main () {
-	std::ofstream out_file{ "output_1.txt", std::ios::app };
+	std::ofstream out_file{ "output_1.txt" to file name, std::ios::app };
 	if (!out_file) {
 		std::cerr << "Error creating file." << std::endl;
 		std::cerr << "Error creating file." << std::endl;
